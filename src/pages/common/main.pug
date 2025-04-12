@@ -1,0 +1,15 @@
+include /common/variables
+
+block variables
+
+doctype html
+html(lang=lang)
+  head
+    include ./head.pug
+    block css
+      link(rel="stylesheet" href="/style.css")
+  body
+    include /components/header
+    block body
+    include /components/footer
+    script(src="/bundle.js" type="module") 

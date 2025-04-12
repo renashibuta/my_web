@@ -1,0 +1,42 @@
+block variables
+
+meta(charset="UTF-8")
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+meta(http-equiv="X-UA-Compatible" content="ie=edge")
+meta(name="keywords" content= keywords)
+
+title #{title}
+link(rel="shortcut icon" href="/img/favicon.png" type="image/x-icon")
+
+meta(name="description" content= ogDesc)
+//- OG
+meta(property="og:locale" content=ogLocale)
+if ogUrl
+  meta(property="og:url", content= ogUrl)
+if ogType
+  meta(property="og:type", content= ogType)
+if title
+  meta(property="og:title", content= title)
+  meta(property="og:site_name", content= title)
+if ogImage
+  meta(property="og:image", content= ogImage)
+meta(property="og:description", content= ogDesc)
+
+meta(name="twitter:card" content="gallery")
+if ogUrl
+  meta(property="twitter:url", content= ogUrl)
+if title
+  meta(property="twitter:title", content= title)
+  meta(property="twitter:site", content= title)
+if ogImage
+  meta(name="image" property="twitter:image", content= ogImage)
+meta(property="twitter:description", content= ogDesc)
+
+meta(name="twitter:card" content="summary")
+if ogUrl
+  meta(property="twitter:url", content= ogUrl)
+if title
+  meta(property="twitter:title", content= title)
+  meta(property="twitter:site", content= title)
+if ogImage
+  meta(name="image" property="twitter:image", content= ogImage)
